@@ -1,0 +1,145 @@
+body{
+    margin: 2rem 0;
+    padding: 0;
+    font-family: 'IBM Plex Sans', sans-serif;
+
+}
+
+header{
+    border-bottom: 1px solid #D3A4A3;
+}
+
+nav{
+    display: flex;
+    justify-content: space-between;
+    /* border: 1px solid red; */
+    padding: 0 2rem;
+    margin-bottom: 2rem;
+    align-items: center;
+}
+
+h1{
+    font-size: 5em;
+    font-weight: bold;
+    margin: 0;
+}
+
+h2{
+    display: inline;
+}
+
+a{
+    text-decoration: none;
+}
+
+main{
+    /* border: 1px solid black; */
+    background-color: #FFFCF8;
+    text-align: center;
+    padding: 4rem 0;
+    border-bottom: 1px solid #D3A4A3;
+}
+
+main h1{
+    line-height: 1em;
+}
+
+main section h3{
+    font-size: 2.1em;
+    font-weight: 100;
+}
+
+section{
+    /* border: 1px solid red; */
+    margin: 2rem auto;
+    width: 49%;
+}
+
+.button{
+    margin: 0 0.25rem;
+    padding: 1rem;
+    border-radius: 4px;
+    background-color: #14203E;
+    color: #F7F7F7;
+    font-size: 0.99rem;
+    font-weight: 100;
+}
+
+.logo h2{
+    color: #9C9DA1;
+}
+
+.mid-nav h2{
+    margin: 0 0.5rem;
+    padding: 0 1.5rem;
+    font-size: 0.99em;
+    color: #14203E;
+}
+
+.end-nav h2{
+    font-size: 0.99em;
+}
+
+.log-in{
+    margin: 0 0.25rem;
+    padding: 0.85rem;
+    border-radius: 4px;
+    background-color: #E5E5E5;
+    color: #000000;
+    font-weight: 100;
+}
+
+.start-free-trial{
+    margin: 0 0.25rem;
+    padding: 1rem;
+    border-radius: 4px;
+    background-color: #14203E;
+    color: #FFFFFF;
+    font-weight: 100;
+}
+
+.line{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.underline{
+    margin: 0 0.5rem;
+    border-bottom: 1px solid black;
+    width: 9rem;
+}
+
+.images{
+    display: grid;
+    justify-content: center;
+    align-content: center;
+    grid-template-columns: repeat(4,16rem);
+    gap: 1rem;
+
+}
+
+.images img{
+    width: 100%;
+    height: 60%;
+    object-fit: cover;
+}
+
+@media (max-width: 48rem) {
+    header nav{
+        display: none;
+    }
+
+    .menu-btn{
+        display: flex;
+    }
+
+    main h1{
+        font-size: 1.5rem;
+    }
+
+    #latest-products ul{
+        grid-template-columns: 100%;
+    }
+    
+}
